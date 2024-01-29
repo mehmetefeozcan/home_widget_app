@@ -33,6 +33,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Workmanager().initialize(callbackDispatcher);
 
+  schedulePeriodicTask();
+
   runApp(const MyApp());
 }
 

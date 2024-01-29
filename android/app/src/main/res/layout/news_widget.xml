@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/widget_container"
     style="@style/Widget.Android.AppWidget.Container"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:background="@color/light_purple"
     android:theme="@style/Theme.Android.AppWidgetContainer">
 
     <TextView
@@ -15,12 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
         android:background="@android:color/white"
         android:text="Title"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/light_purple" />
 
     <TextView
         android:id="@+id/widget_desc"
@@ -30,12 +32,24 @@
         android:layout_below="@+id/widget_title"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
         android:background="@android:color/white"
         android:text="Title"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/light_purple" />
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/widget_title"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-60dp"
+        android:layout_toEndOf="@+id/widget_desc"
+        android:src="@mipmap/ic_launcher" />
 
 
 </RelativeLayout>
